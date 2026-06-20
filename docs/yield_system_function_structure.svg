@@ -1,0 +1,192 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="2020" height="820" viewBox="0 0 2020 820">
+  <defs>
+    <style>
+      .bg{fill:#ffffff}
+      .title{font:700 32px "Microsoft YaHei","SimHei","SimSun",Arial,sans-serif;fill:#1f2937}
+      .subtitle{font:500 17px "Microsoft YaHei","SimHei","SimSun",Arial,sans-serif;fill:#4b5563}
+      .root{fill:#f8fafc;stroke:#334155;stroke-width:2.4;rx:8}
+      .module{fill:#eef6ff;stroke:#1d4ed8;stroke-width:2;rx:8}
+      .leaf{fill:#ffffff;stroke:#64748b;stroke-width:1.8;rx:6}
+      .leafSoft{fill:#f8fafc;stroke:#64748b;stroke-width:1.8;rx:6}
+      .rootText{font:700 24px "Microsoft YaHei","SimHei","SimSun",Arial,sans-serif;fill:#111827}
+      .moduleText{font:700 20px "Microsoft YaHei","SimHei","SimSun",Arial,sans-serif;fill:#102a56}
+      .leafText{font:600 16px "Microsoft YaHei","SimHei","SimSun",Arial,sans-serif;fill:#111827}
+      .line{stroke:#334155;stroke-width:2;fill:none}
+      .thin{stroke:#475569;stroke-width:1.8;fill:none}
+    </style>
+  </defs>
+
+  <rect class="bg" width="2020" height="820"/>
+  <text class="title" x="60" y="58">姘寸ɑ浜ч噺棰勬祴绯荤粺鍔熻兘缁撴瀯鍥?/text>
+  <text class="subtitle" x="60" y="90">闈㈠悜宸查儴缃插悗鍙扮郴缁燂紝灞曠ず缃戦〉鐧诲綍銆佷换鍔＄鐞嗐€佹棤浜烘満鐩戞帶銆佸浘鍍忕鐞嗐€佹寚鏍囧垎鏋愪笌浼颁骇缁撴灉绛夊姛鑳姐€?/text>
+
+  <rect class="root" x="785" y="122" width="450" height="72"/>
+  <text class="rootText" x="1010" y="167" text-anchor="middle">姘寸ɑ浜ч噺棰勬祴绯荤粺</text>
+
+  <path class="line" d="M1010 194 L1010 250"/>
+  <path class="line" d="M170 250 L1821 250"/>
+
+  <path class="line" d="M170 250 L170 300"/>
+  <path class="line" d="M477 250 L477 300"/>
+  <path class="line" d="M805 250 L805 300"/>
+  <path class="line" d="M1149 250 L1149 300"/>
+  <path class="line" d="M1493 250 L1493 300"/>
+  <path class="line" d="M1821 250 L1821 300"/>
+
+  <g id="module-auth">
+    <rect class="module" x="50" y="300" width="240" height="58"/>
+    <text class="moduleText" x="170" y="336" text-anchor="middle">绯荤粺鐧诲綍涓庤繍琛?/text>
+    <path class="thin" d="M170 358 L170 398"/>
+    <path class="thin" d="M62 398 L278 398"/>
+    <path class="thin" d="M62 398 L62 430"/>
+    <path class="thin" d="M116 398 L116 430"/>
+    <path class="thin" d="M170 398 L170 430"/>
+    <path class="thin" d="M224 398 L224 430"/>
+    <path class="thin" d="M278 398 L278 430"/>
+
+    <rect class="leaf" x="40" y="430" width="44" height="230"/>
+    <text class="leafText" writing-mode="tb" glyph-orientation-vertical="0" x="62" y="454">绠＄悊鍛樼櫥褰?/text>
+    <rect class="leaf" x="94" y="430" width="44" height="230"/>
+    <text class="leafText" writing-mode="tb" glyph-orientation-vertical="0" x="116" y="454">楠岃瘉鐮佹牎楠?/text>
+    <rect class="leaf" x="148" y="430" width="44" height="230"/>
+    <text class="leafText" writing-mode="tb" glyph-orientation-vertical="0" x="170" y="454">浼氳瘽淇濇寔</text>
+    <rect class="leaf" x="202" y="430" width="44" height="230"/>
+    <text class="leafText" writing-mode="tb" glyph-orientation-vertical="0" x="224" y="454">澶╂皵鏄剧ず</text>
+    <rect class="leaf" x="256" y="430" width="44" height="230"/>
+    <text class="leafText" writing-mode="tb" glyph-orientation-vertical="0" x="278" y="454">鏃堕棿鏄剧ず</text>
+  </g>
+
+  <g id="module-task">
+    <rect class="module" x="357" y="300" width="240" height="58"/>
+    <text class="moduleText" x="477" y="336" text-anchor="middle">浠诲姟绠＄悊</text>
+    <path class="thin" d="M477 358 L477 398"/>
+    <path class="thin" d="M347 398 L607 398"/>
+    <path class="thin" d="M347 398 L347 430"/>
+    <path class="thin" d="M399 398 L399 430"/>
+    <path class="thin" d="M451 398 L451 430"/>
+    <path class="thin" d="M503 398 L503 430"/>
+    <path class="thin" d="M555 398 L555 430"/>
+    <path class="thin" d="M607 398 L607 430"/>
+
+    <rect class="leafSoft" x="326" y="430" width="42" height="250"/>
+    <text class="leafText" writing-mode="tb" glyph-orientation-vertical="0" x="347" y="454">浠诲姟閫夋嫨</text>
+    <rect class="leafSoft" x="378" y="430" width="42" height="250"/>
+    <text class="leafText" writing-mode="tb" glyph-orientation-vertical="0" x="399" y="454">鏂板缓浠诲姟</text>
+    <rect class="leafSoft" x="430" y="430" width="42" height="250"/>
+    <text class="leafText" writing-mode="tb" glyph-orientation-vertical="0" x="451" y="454">淇敼浠诲姟鍚?/text>
+    <rect class="leafSoft" x="482" y="430" width="42" height="250"/>
+    <text class="leafText" writing-mode="tb" glyph-orientation-vertical="0" x="503" y="454">鍒犻櫎浠诲姟</text>
+    <rect class="leafSoft" x="534" y="430" width="42" height="250"/>
+    <text class="leafText" writing-mode="tb" glyph-orientation-vertical="0" x="555" y="454">浠诲姟鍖哄煙璁剧疆</text>
+    <rect class="leafSoft" x="586" y="430" width="42" height="250"/>
+    <text class="leafText" writing-mode="tb" glyph-orientation-vertical="0" x="607" y="454">閲囬泦鐐硅鍒?/text>
+  </g>
+
+  <g id="module-uav-monitor">
+    <rect class="module" x="685" y="300" width="240" height="58"/>
+    <text class="moduleText" x="805" y="336" text-anchor="middle">鏃犱汉鏈虹洃鎺?/text>
+    <path class="thin" d="M805 358 L805 398"/>
+    <path class="thin" d="M675 398 L935 398"/>
+    <path class="thin" d="M675 398 L675 430"/>
+    <path class="thin" d="M727 398 L727 430"/>
+    <path class="thin" d="M779 398 L779 430"/>
+    <path class="thin" d="M831 398 L831 430"/>
+    <path class="thin" d="M883 398 L883 430"/>
+    <path class="thin" d="M935 398 L935 430"/>
+
+    <rect class="leaf" x="654" y="430" width="42" height="250"/>
+    <text class="leafText" writing-mode="tb" glyph-orientation-vertical="0" x="675" y="454">鏃犱汉鏈哄垏鎹?/text>
+    <rect class="leaf" x="706" y="430" width="42" height="250"/>
+    <text class="leafText" writing-mode="tb" glyph-orientation-vertical="0" x="727" y="454">鐘舵€佺洃娴?/text>
+    <rect class="leaf" x="758" y="430" width="42" height="250"/>
+    <text class="leafText" writing-mode="tb" glyph-orientation-vertical="0" x="779" y="454">濮挎€佹樉绀?/text>
+    <rect class="leaf" x="810" y="430" width="42" height="250"/>
+    <text class="leafText" writing-mode="tb" glyph-orientation-vertical="0" x="831" y="454">瀹炴椂鐢婚潰</text>
+    <rect class="leaf" x="862" y="430" width="42" height="250"/>
+    <text class="leafText" writing-mode="tb" glyph-orientation-vertical="0" x="883" y="454">浠诲姟涓嬪彂</text>
+    <rect class="leaf" x="914" y="430" width="42" height="250"/>
+    <text class="leafText" writing-mode="tb" glyph-orientation-vertical="0" x="935" y="454">鎸囦护鍙嶉</text>
+  </g>
+
+  <g id="module-image">
+    <rect class="module" x="1029" y="300" width="240" height="58"/>
+    <text class="moduleText" x="1149" y="336" text-anchor="middle">閲囬泦鍥惧儚绠＄悊</text>
+    <path class="thin" d="M1149 358 L1149 398"/>
+    <path class="thin" d="M1002 398 L1296 398"/>
+    <path class="thin" d="M1002 398 L1002 430"/>
+    <path class="thin" d="M1051 398 L1051 430"/>
+    <path class="thin" d="M1100 398 L1100 430"/>
+    <path class="thin" d="M1149 398 L1149 430"/>
+    <path class="thin" d="M1198 398 L1198 430"/>
+    <path class="thin" d="M1247 398 L1247 430"/>
+    <path class="thin" d="M1296 398 L1296 430"/>
+
+    <rect class="leafSoft" x="982" y="430" width="40" height="250"/>
+    <text class="leafText" writing-mode="tb" glyph-orientation-vertical="0" x="1002" y="454">鍥惧儚鍏ュ簱</text>
+    <rect class="leafSoft" x="1031" y="430" width="40" height="250"/>
+    <text class="leafText" writing-mode="tb" glyph-orientation-vertical="0" x="1051" y="454">鐐逛綅鍖归厤</text>
+    <rect class="leafSoft" x="1080" y="430" width="40" height="250"/>
+    <text class="leafText" writing-mode="tb" glyph-orientation-vertical="0" x="1100" y="454">鍥惧儚鏌ョ湅</text>
+    <rect class="leafSoft" x="1129" y="430" width="40" height="250"/>
+    <text class="leafText" writing-mode="tb" glyph-orientation-vertical="0" x="1149" y="454">鍥惧儚瀵煎嚭</text>
+    <rect class="leafSoft" x="1178" y="430" width="40" height="250"/>
+    <text class="leafText" writing-mode="tb" glyph-orientation-vertical="0" x="1198" y="454">浠诲姟褰掑睘淇敼</text>
+    <rect class="leafSoft" x="1227" y="430" width="40" height="250"/>
+    <text class="leafText" writing-mode="tb" glyph-orientation-vertical="0" x="1247" y="454">閲囬泦鐐瑰垹闄?/text>
+    <rect class="leafSoft" x="1276" y="430" width="40" height="250"/>
+    <text class="leafText" writing-mode="tb" glyph-orientation-vertical="0" x="1296" y="454">鎵归噺绠＄悊</text>
+  </g>
+
+  <g id="module-heat">
+    <rect class="module" x="1373" y="300" width="240" height="58"/>
+    <text class="moduleText" x="1493" y="336" text-anchor="middle">鎸囨爣鐑姏鍒嗘瀽</text>
+    <path class="thin" d="M1493 358 L1493 398"/>
+    <path class="thin" d="M1363 398 L1623 398"/>
+    <path class="thin" d="M1363 398 L1363 430"/>
+    <path class="thin" d="M1415 398 L1415 430"/>
+    <path class="thin" d="M1467 398 L1467 430"/>
+    <path class="thin" d="M1519 398 L1519 430"/>
+    <path class="thin" d="M1571 398 L1571 430"/>
+    <path class="thin" d="M1623 398 L1623 430"/>
+
+    <rect class="leaf" x="1342" y="430" width="42" height="250"/>
+    <text class="leafText" writing-mode="tb" glyph-orientation-vertical="0" x="1363" y="454">浜╀骇閲忕儹鍔涘浘</text>
+    <rect class="leaf" x="1394" y="430" width="42" height="250"/>
+    <text class="leafText" writing-mode="tb" glyph-orientation-vertical="0" x="1415" y="454">绌楀瘑搴︾儹鍔涘浘</text>
+    <rect class="leaf" x="1446" y="430" width="42" height="250"/>
+    <text class="leafText" writing-mode="tb" glyph-orientation-vertical="0" x="1467" y="454">绌楄鐩栫巼鐑姏鍥?/text>
+    <rect class="leaf" x="1498" y="430" width="42" height="250"/>
+    <text class="leafText" writing-mode="tb" glyph-orientation-vertical="0" x="1519" y="454">鏍珮鐑姏鍥?/text>
+    <rect class="leaf" x="1550" y="430" width="42" height="250"/>
+    <text class="leafText" writing-mode="tb" glyph-orientation-vertical="0" x="1571" y="454">0.5绫崇綉鏍?/text>
+    <rect class="leaf" x="1602" y="430" width="42" height="250"/>
+    <text class="leafText" writing-mode="tb" glyph-orientation-vertical="0" x="1623" y="454">鎸囨爣鎻愮ず</text>
+  </g>
+
+  <g id="module-result">
+    <rect class="module" x="1701" y="300" width="240" height="58"/>
+    <text class="moduleText" x="1821" y="336" text-anchor="middle">浼颁骇缁撴灉绠＄悊</text>
+    <path class="thin" d="M1821 358 L1821 398"/>
+    <path class="thin" d="M1691 398 L1951 398"/>
+    <path class="thin" d="M1691 398 L1691 430"/>
+    <path class="thin" d="M1743 398 L1743 430"/>
+    <path class="thin" d="M1795 398 L1795 430"/>
+    <path class="thin" d="M1847 398 L1847 430"/>
+    <path class="thin" d="M1899 398 L1899 430"/>
+    <path class="thin" d="M1951 398 L1951 430"/>
+
+    <rect class="leafSoft" x="1670" y="430" width="42" height="250"/>
+    <text class="leafText" writing-mode="tb" glyph-orientation-vertical="0" x="1691" y="454">鎬讳骇閲忎及绠?/text>
+    <rect class="leafSoft" x="1722" y="430" width="42" height="250"/>
+    <text class="leafText" writing-mode="tb" glyph-orientation-vertical="0" x="1743" y="454">瑕嗙洊闈㈢Н缁熻</text>
+    <rect class="leafSoft" x="1774" y="430" width="42" height="250"/>
+    <text class="leafText" writing-mode="tb" glyph-orientation-vertical="0" x="1795" y="454">閲囬泦杩涘害</text>
+    <rect class="leafSoft" x="1826" y="430" width="42" height="250"/>
+    <text class="leafText" writing-mode="tb" glyph-orientation-vertical="0" x="1847" y="454">棰勮鐢ㄦ椂</text>
+    <rect class="leafSoft" x="1878" y="430" width="42" height="250"/>
+    <text class="leafText" writing-mode="tb" glyph-orientation-vertical="0" x="1899" y="454">缁撴灉淇濆瓨</text>
+    <rect class="leafSoft" x="1930" y="430" width="42" height="250"/>
+    <text class="leafText" writing-mode="tb" glyph-orientation-vertical="0" x="1951" y="454">鍘嗗彶鏌ョ湅</text>
+  </g>
+</svg>
+

@@ -1,0 +1,99 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900">
+  <defs>
+    <style>
+      .bg{fill:#f7fafc}
+      .title{font:700 24px "Microsoft YaHei",Arial,sans-serif;fill:#102033}
+      .node{fill:#fff;stroke:#cfd8e3;stroke-width:2;rx:8}
+      .db{fill:#f2fbf6;stroke:#78c59b;stroke-width:2;rx:8}
+      .view{fill:#eef7ff;stroke:#8abdf5;stroke-width:2;rx:8}
+      .text{font:600 15px "Microsoft YaHei",Arial,sans-serif;fill:#24364b}
+      .small{font:500 13px "Microsoft YaHei",Arial,sans-serif;fill:#5c6f82}
+      .arrow{stroke:#2f80ed;stroke-width:3;fill:none;marker-end:url(#arrow)}
+      .arrow2{stroke:#0f8f5f;stroke-width:3;fill:none;marker-end:url(#arrow2)}
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#2f80ed"/>
+    </marker>
+    <marker id="arrow2" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#0f8f5f"/>
+    </marker>
+  </defs>
+
+  <rect class="bg" width="1400" height="900"/>
+  <text class="title" x="40" y="48">鍚庡彴绯荤粺鏁版嵁娴佸浘</text>
+
+  <rect class="node" x="70" y="90" width="250" height="54"/>
+  <text class="text" x="104" y="123">鍒涘缓 / 閫夋嫨娴嬩骇浠诲姟</text>
+  <rect class="node" x="70" y="180" width="250" height="54"/>
+  <text class="text" x="112" y="213">鍦板浘璁剧疆浠诲姟鍖哄煙</text>
+  <rect class="node" x="70" y="270" width="250" height="54"/>
+  <text class="text" x="80" y="303">缁撳悎瑕嗙洊鐜?/ 楂樺害 / 閲嶅彔鐜囪鍒?/text>
+  <rect class="db" x="70" y="360" width="250" height="64"/>
+  <text class="text" x="116" y="388">missions</text>
+  <text class="small" x="104" y="412">mission_areas / 椋炶浠诲姟</text>
+
+  <rect class="node" x="420" y="130" width="270" height="54"/>
+  <text class="text" x="458" y="163">鐢熸垚鏃犱汉鏈洪琛屼换鍔?/text>
+  <rect class="node" x="420" y="220" width="270" height="54"/>
+  <text class="text" x="452" y="253">涓嬪彂 / 鎷夊彇鏃犱汉鏈轰换鍔?/text>
+  <rect class="node" x="420" y="310" width="270" height="54"/>
+  <text class="text" x="466" y="343">鏃犱汉鏈洪噰闆嗗浘鍍?/text>
+  <rect class="node" x="420" y="400" width="270" height="54"/>
+  <text class="text" x="490" y="433">ARW 杞?JPG</text>
+  <rect class="node" x="420" y="490" width="270" height="54"/>
+  <text class="text" x="462" y="523">涓婁紶鍥惧儚涓?GPS</text>
+  <rect class="node" x="420" y="590" width="270" height="54"/>
+  <text class="text" x="458" y="623">涓婁紶閬ユ祴涓庣數閲?/text>
+
+  <rect class="node" x="420" y="710" width="270" height="54"/>
+  <text class="text" x="414" y="743">鍙€夋墜鎸侀噰闆?RGB/娣卞害/琛ㄥ瀷/GPS</text>
+  <rect class="node" x="420" y="800" width="270" height="54"/>
+  <text class="text" x="438" y="833">涓婁紶鍥惧儚涓庤〃鍨嬫寚鏍囨暟鎹?/text>
+
+  <rect class="db" x="790" y="210" width="250" height="62"/>
+  <text class="text" x="846" y="238">capture_images</text>
+  <text class="small" x="836" y="260">鍥惧儚 URL / GPS / 浠诲姟</text>
+  <rect class="db" x="790" y="310" width="250" height="62"/>
+  <text class="text" x="846" y="338">capture_metrics</text>
+  <text class="small" x="820" y="360">瑕嗙洊鐜?/ 鏍珮 / 浜╀骇閲忕瓑</text>
+  <rect class="db" x="790" y="450" width="250" height="62"/>
+  <text class="text" x="874" y="478">devices</text>
+  <text class="small" x="872" y="500">telemetry</text>
+  <rect class="db" x="790" y="590" width="250" height="62"/>
+  <text class="text" x="852" y="618">yield_results</text>
+  <text class="small" x="820" y="640">骞冲潎浜╀骇 / 鎬讳骇閲?/ 缃俊搴?/text>
+
+  <rect class="node" x="1120" y="330" width="230" height="54"/>
+  <text class="text" x="1148" y="363">鏃犱汉鏈轰及浜?/ 铻嶅悎鏍″噯</text>
+  <rect class="view" x="1120" y="450" width="230" height="54"/>
+  <text class="text" x="1168" y="483">鍦板浘瀹炴椂浣嶇疆</text>
+  <rect class="view" x="1120" y="540" width="230" height="54"/>
+  <text class="text" x="1168" y="573">鎸囨爣鐑姏鍥?/text>
+  <rect class="view" x="1120" y="630" width="230" height="54"/>
+  <text class="text" x="1138" y="663">鏃犱汉鏈轰及浜т笌铻嶅悎浼颁骇灞曠ず</text>
+  <rect class="view" x="1120" y="720" width="230" height="54"/>
+  <text class="text" x="1148" y="753">閲囬泦鐐瑰浘鍍忕鐞?/text>
+
+  <path class="arrow" d="M195 144 L195 180"/>
+  <path class="arrow" d="M195 234 L195 270"/>
+  <path class="arrow" d="M195 324 L195 360"/>
+  <path class="arrow" d="M320 392 C370 345, 385 205, 420 157"/>
+  <path class="arrow" d="M555 184 L555 220"/>
+  <path class="arrow" d="M555 274 L555 310"/>
+  <path class="arrow" d="M555 364 L555 400"/>
+  <path class="arrow" d="M555 454 L555 490"/>
+  <path class="arrow" d="M690 517 C725 430, 748 265, 790 241"/>
+  <path class="arrow2" d="M690 517 C725 455, 748 370, 790 341"/>
+  <path class="arrow" d="M555 544 L555 590"/>
+  <path class="arrow" d="M690 617 C728 552, 748 500, 790 481"/>
+  <path class="arrow2" d="M555 764 L555 800"/>
+  <path class="arrow2" d="M690 827 C735 690, 742 385, 790 341"/>
+  <path class="arrow2" d="M1040 341 L1120 357"/>
+  <path class="arrow2" d="M320 392 C650 660, 920 670, 1120 657"/>
+  <path class="arrow2" d="M1235 384 L1040 621"/>
+  <path class="arrow" d="M1040 481 L1120 477"/>
+  <path class="arrow" d="M1040 341 C1085 390, 1085 520, 1120 567"/>
+  <path class="arrow" d="M1040 621 L1120 657"/>
+  <path class="arrow" d="M1040 241 C1090 330, 1090 690, 1120 747"/>
+</svg>
+

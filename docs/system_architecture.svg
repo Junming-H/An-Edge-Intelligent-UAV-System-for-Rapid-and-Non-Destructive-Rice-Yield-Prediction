@@ -1,0 +1,86 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="820" viewBox="0 0 1400 820">
+  <defs>
+    <style>
+      .bg{fill:#f6f8fb}
+      .box{fill:#fff;stroke:#cfd8e3;stroke-width:2;rx:8}
+      .group{fill:#ffffffcc;stroke:#9fb2c8;stroke-width:2;rx:8}
+      .title{font:700 24px "Microsoft YaHei",Arial,sans-serif;fill:#102033}
+      .gtitle{font:700 18px "Microsoft YaHei",Arial,sans-serif;fill:#0f5132}
+      .text{font:600 15px "Microsoft YaHei",Arial,sans-serif;fill:#24364b}
+      .small{font:500 13px "Microsoft YaHei",Arial,sans-serif;fill:#5c6f82}
+      .arrow{stroke:#2f80ed;stroke-width:3;fill:none;marker-end:url(#arrow)}
+      .arrow2{stroke:#0f8f5f;stroke-width:3;fill:none;marker-end:url(#arrow)}
+      .note{fill:#eef7ff;stroke:#9dccff;stroke-width:1.5;rx:8}
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#2f80ed"/>
+    </marker>
+  </defs>
+
+  <rect class="bg" width="1400" height="820"/>
+  <text class="title" x="40" y="48">绌哄湴鍗忓悓姘寸ɑ娴嬩骇鍚庡彴绯荤粺鏋舵瀯鍥?/text>
+
+  <rect class="group" x="40" y="90" width="300" height="290"/>
+  <text class="gtitle" x="64" y="124">绌轰腑绔細鑷爺鏃犱汉鏈?/text>
+  <rect class="box" x="70" y="150" width="240" height="48"/>
+  <text class="text" x="96" y="180">鏃犱汉鏈哄钩鍙?/text>
+  <rect class="box" x="70" y="214" width="240" height="48"/>
+  <text class="text" x="96" y="244">Sony A7C2 褰卞儚閲囬泦</text>
+  <rect class="box" x="70" y="278" width="240" height="48"/>
+  <text class="text" x="96" y="308">GPS / 楂樺害 / 閫熷害 / 鐢甸噺</text>
+  <text class="small" x="70" y="354">ARW 杞?JPG 鍚庝笂浼犲浘鍍忎笌瀹氫綅淇℃伅</text>
+
+  <rect class="group" x="40" y="430" width="300" height="250"/>
+  <text class="gtitle" x="64" y="464">鍦伴潰绔細鎵嬫寔娣卞害鐩告満璁惧锛堝彲閫夛級</text>
+  <rect class="box" x="70" y="490" width="240" height="48"/>
+  <text class="text" x="96" y="520">鎵嬫寔鍦伴潰閲囬泦璁惧</text>
+  <rect class="box" x="70" y="554" width="240" height="48"/>
+  <text class="text" x="96" y="584">娣卞害鐩告満涓?RGB 鍥惧儚</text>
+  <rect class="box" x="70" y="618" width="240" height="48"/>
+  <text class="text" x="96" y="648">鏍珮 / 璋风矑鏁?/ 璋风矑浣撶Н</text>
+
+  <rect class="group" x="470" y="120" width="420" height="520"/>
+  <text class="gtitle" x="500" y="154">浜戠锛氶樋閲屼簯 ECS锛堝凡閮ㄧ讲锛?/text>
+  <rect class="box" x="520" y="185" width="320" height="54"/>
+  <text class="text" x="568" y="218">yield-prod-web锛歂ginx 椤甸潰涓庝唬鐞?/text>
+  <rect class="box" x="520" y="268" width="320" height="54"/>
+  <text class="text" x="576" y="301">yield-prod-api锛欶astAPI 涓氬姟鏈嶅姟</text>
+  <rect class="box" x="520" y="351" width="320" height="54"/>
+  <text class="text" x="555" y="384">yield-prod-mysql锛歁ySQL 鎸佷箙鍖栨暟鎹簱</text>
+  <rect class="box" x="520" y="434" width="320" height="54"/>
+  <text class="text" x="578" y="467">uploads / 寤烘ā鐡︾墖 / 鐑姏鐡︾墖</text>
+  <rect class="note" x="520" y="520" width="320" height="84"/>
+  <text class="small" x="548" y="548">鏍稿績琛細missions / mission_areas</text>
+  <text class="small" x="548" y="572">telemetry / capture_images</text>
+  <text class="small" x="548" y="596">capture_metrics / yield_results</text>
+
+  <rect class="group" x="1030" y="120" width="320" height="520"/>
+  <text class="gtitle" x="1060" y="154">Web 鍚庡彴灞曠ず</text>
+  <rect class="box" x="1070" y="185" width="240" height="48"/>
+  <text class="text" x="1090" y="216">澶х枂绮剧伒 4 寤烘ā鍦板浘</text>
+  <rect class="box" x="1070" y="254" width="240" height="48"/>
+  <text class="text" x="1078" y="285">瑕嗙洊鐜?楂樺害/閲嶅彔鐜囪鍒?/text>
+  <rect class="box" x="1070" y="323" width="240" height="48"/>
+  <text class="text" x="1082" y="354">0.5m 鎸囨暟鐑姏鍥捐鍓樉绀?/text>
+  <rect class="box" x="1070" y="392" width="240" height="48"/>
+  <text class="text" x="1090" y="423">璁惧瀹炴椂浣嶇疆涓庣姸鎬?/text>
+  <rect class="box" x="1070" y="461" width="240" height="48"/>
+  <text class="text" x="1088" y="492">鏃犱汉鏈轰及浜?/ 铻嶅悎浼颁骇</text>
+  <rect class="box" x="1070" y="530" width="240" height="48"/>
+  <text class="text" x="1094" y="561">鍥惧儚鐐逛笌鎵归噺绠＄悊</text>
+
+  <path class="arrow" d="M340 235 C400 235, 420 245, 470 275"/>
+  <text class="small" x="360" y="220">鍥惧儚 + GPS + 閬ユ祴</text>
+  <path class="arrow2" d="M340 560 C410 540, 430 510, 470 455"/>
+  <text class="small" x="348" y="535">鍙€?RGB / 娣卞害鍥?/ 琛ㄥ瀷 + GPS</text>
+  <path class="arrow" d="M890 285 C955 285, 980 250, 1030 220"/>
+  <text class="small" x="918" y="260">浠诲姟 / 鍥惧儚 / 鎸囨爣 / 鑸偣</text>
+  <path class="arrow2" d="M1030 350 C970 350, 950 370, 890 380"/>
+  <text class="small" x="910" y="405">鏌ヨ涓庡疄鏃跺埛鏂?/text>
+  <path class="arrow" d="M470 300 C410 300, 400 285, 340 270"/>
+  <text class="small" x="350" y="292">涓嬪彂鏃犱汉鏈洪琛屼换鍔?/text>
+
+  <rect class="note" x="430" y="700" width="520" height="54"/>
+  <text class="small" x="455" y="730">鍏綉璁块棶锛歨ttp://SERVER_IP锛涗换鍔°€佸浘鍍忋€佹寚鏍囧拰浼颁骇缁撴灉鍧囩敱 MySQL 鎸佷箙鍖栦繚瀛樸€?/text>
+</svg>
+

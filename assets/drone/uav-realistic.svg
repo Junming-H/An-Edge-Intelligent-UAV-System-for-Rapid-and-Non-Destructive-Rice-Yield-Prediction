@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520" role="img" aria-label="Quadcopter UAV model">
+  <defs>
+    <linearGradient id="bodyTop" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.45" stop-color="#e7eef5"/>
+      <stop offset="1" stop-color="#8fa3b8"/>
+    </linearGradient>
+    <linearGradient id="bodySide" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#cbd7e3"/>
+      <stop offset="1" stop-color="#617487"/>
+    </linearGradient>
+    <linearGradient id="darkMetal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4b5d70"/>
+      <stop offset="1" stop-color="#162231"/>
+    </linearGradient>
+    <linearGradient id="armMetal" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#f6f9fc"/>
+      <stop offset="0.48" stop-color="#9aabbc"/>
+      <stop offset="1" stop-color="#566879"/>
+    </linearGradient>
+    <radialGradient id="motorTop" cx="42%" cy="32%" r="70%">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.35" stop-color="#c6d2dd"/>
+      <stop offset="0.72" stop-color="#66798a"/>
+      <stop offset="1" stop-color="#273546"/>
+    </radialGradient>
+    <radialGradient id="lens" cx="45%" cy="38%" r="58%">
+      <stop offset="0" stop-color="#70d6ff"/>
+      <stop offset="0.36" stop-color="#0a84ff"/>
+      <stop offset="1" stop-color="#07111f"/>
+    </radialGradient>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="24" stdDeviation="18" flood-color="#1e2c3a" flood-opacity="0.25"/>
+    </filter>
+    <filter id="bladeBlur" x="-20%" y="-70%" width="140%" height="240%">
+      <feGaussianBlur stdDeviation="0.9"/>
+    </filter>
+    <g id="propeller">
+      <ellipse cx="-52" cy="0" rx="72" ry="11" fill="#1f2f40" opacity="0.30" filter="url(#bladeBlur)"/>
+      <ellipse cx="52" cy="0" rx="72" ry="11" fill="#1f2f40" opacity="0.30" filter="url(#bladeBlur)"/>
+      <ellipse cx="0" cy="-52" rx="11" ry="72" fill="#1f2f40" opacity="0.22" filter="url(#bladeBlur)"/>
+      <ellipse cx="0" cy="52" rx="11" ry="72" fill="#1f2f40" opacity="0.22" filter="url(#bladeBlur)"/>
+      <circle cx="0" cy="0" r="42" fill="url(#motorTop)"/>
+      <circle cx="0" cy="0" r="23" fill="#edf4fb"/>
+      <circle cx="0" cy="0" r="9" fill="#324457"/>
+      <path d="M-30 -15 C-54 -7 -72 2 -88 18" fill="none" stroke="#ffffff" stroke-width="4" opacity="0.32"/>
+    </g>
+  </defs>
+
+  <ellipse cx="482" cy="404" rx="278" ry="58" fill="#203449" opacity="0.13"/>
+
+  <g filter="url(#softShadow)">
+    <g opacity="0.92">
+      <path d="M455 240 L260 134" stroke="url(#armMetal)" stroke-width="24" stroke-linecap="round"/>
+      <path d="M505 240 L700 134" stroke="url(#armMetal)" stroke-width="24" stroke-linecap="round"/>
+      <path d="M452 288 L248 390" stroke="url(#armMetal)" stroke-width="24" stroke-linecap="round"/>
+      <path d="M508 288 L716 390" stroke="url(#armMetal)" stroke-width="24" stroke-linecap="round"/>
+      <path d="M455 240 L260 134" stroke="#ffffff" stroke-width="7" stroke-linecap="round" opacity="0.45"/>
+      <path d="M505 240 L700 134" stroke="#ffffff" stroke-width="7" stroke-linecap="round" opacity="0.45"/>
+      <path d="M452 288 L248 390" stroke="#ffffff" stroke-width="7" stroke-linecap="round" opacity="0.35"/>
+      <path d="M508 288 L716 390" stroke="#ffffff" stroke-width="7" stroke-linecap="round" opacity="0.35"/>
+    </g>
+
+    <g transform="translate(250 132) rotate(-13)">
+      <use href="#propeller"/>
+    </g>
+    <g transform="translate(710 132) rotate(11)">
+      <use href="#propeller"/>
+    </g>
+    <g transform="translate(238 392) rotate(15)">
+      <use href="#propeller"/>
+    </g>
+    <g transform="translate(724 392) rotate(-11)">
+      <use href="#propeller"/>
+    </g>
+
+    <path d="M405 224 C426 176 534 174 556 224 L579 292 C595 340 548 376 482 376 C416 376 368 341 384 292 Z" fill="url(#bodySide)"/>
+    <path d="M392 212 C416 166 545 166 569 212 C583 241 577 302 544 324 C513 344 446 344 416 324 C383 302 377 241 392 212 Z" fill="url(#bodyTop)" stroke="#7e92a7" stroke-width="2"/>
+    <path d="M438 187 C456 170 509 170 526 187 C503 197 462 197 438 187 Z" fill="#ffffff" opacity="0.82"/>
+    <path d="M423 219 C447 198 514 198 539 219 L531 250 C504 237 459 237 431 250 Z" fill="#f8fbff" opacity="0.78"/>
+    <path d="M468 176 L493 176 L507 207 L454 207 Z" fill="#0a84ff" opacity="0.88"/>
+    <path d="M452 326 C463 337 503 337 514 326 L508 361 C500 371 467 371 459 361 Z" fill="#516579"/>
+
+    <g transform="translate(438 336)">
+      <path d="M16 0 H70 C84 0 94 12 94 27 V52 C94 66 83 78 69 78 H17 C6 78 -2 67 1 56 L8 13 C10 5 11 0 16 0 Z" fill="url(#darkMetal)"/>
+      <circle cx="48" cy="41" r="25" fill="#111827"/>
+      <circle cx="48" cy="41" r="17" fill="url(#lens)"/>
+      <circle cx="41" cy="34" r="5" fill="#dff6ff" opacity="0.9"/>
+      <rect x="28" y="-22" width="38" height="24" rx="7" fill="#708398"/>
+    </g>
+
+    <path d="M404 347 C368 385 361 407 352 430" fill="none" stroke="#506478" stroke-width="10" stroke-linecap="round"/>
+    <path d="M558 347 C594 385 601 407 610 430" fill="none" stroke="#506478" stroke-width="10" stroke-linecap="round"/>
+    <path d="M326 430 H392" stroke="#394b5f" stroke-width="10" stroke-linecap="round"/>
+    <path d="M570 430 H636" stroke="#394b5f" stroke-width="10" stroke-linecap="round"/>
+
+    <path d="M408 228 C428 215 535 215 555 228" fill="none" stroke="#ffffff" stroke-width="5" opacity="0.75"/>
+    <path d="M410 277 C439 293 523 293 552 277" fill="none" stroke="#33485e" stroke-width="3" opacity="0.35"/>
+  </g>
+</svg>

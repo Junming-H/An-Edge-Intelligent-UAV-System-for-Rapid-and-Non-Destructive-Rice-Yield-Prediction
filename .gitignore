@@ -1,0 +1,37 @@
+# Local/editor state
+.codex/
+.codex-schema/
+.agents/
+.playwright-cli/
+.codex_zip_path.txt
+CursorUserSetup-*.exe
+.DS_Store
+Thumbs.db
+
+# Secrets and runtime data
+.env
+uploads/
+*.log
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Build/deploy archives and temporary analysis output
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+temp_analysis/
+temp_*.py
+jetson_backups/
+jetson_packages/
+plugins/
+tech-dashboard.*
+
+# Non-backend-system assets kept outside the GitHub source repo
+assets/model_map/
+assets/images/uav/
+assets/plans/
+*.SLDASM

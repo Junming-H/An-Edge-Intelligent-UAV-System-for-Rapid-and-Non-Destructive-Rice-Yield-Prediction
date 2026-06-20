@@ -1,0 +1,221 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="2200" height="1080" viewBox="0 0 2200 1080">
+  <defs>
+    <style>
+      .bg{fill:#f7f9fc}
+      .title{font:700 34px "Microsoft YaHei","SimHei","SimSun",Arial,sans-serif;fill:#1f2937}
+      .subtitle{font:500 18px "Microsoft YaHei","SimHei","SimSun",Arial,sans-serif;fill:#667085}
+      .group{fill:#ffffff;stroke:#cbd5e1;stroke-width:2;rx:8}
+      .lane{fill:#ffffff;stroke:#94a3b8;stroke-width:2;rx:8}
+      .laneHead{fill:#f1f5f9;stroke:#94a3b8;stroke-width:2;rx:8}
+      .sourceLane{fill:#f8fff9;stroke:#16a34a;stroke-width:2;rx:8}
+      .clientLane{fill:#f8fbff;stroke:#2563eb;stroke-width:2;rx:8}
+      .boxBlue{fill:#eff6ff;stroke:#2563eb;stroke-width:2;rx:8}
+      .boxGreen{fill:#f0fdf4;stroke:#16a34a;stroke-width:2;rx:8}
+      .boxOrange{fill:#fff7ed;stroke:#f59e0b;stroke-width:2;rx:8}
+      .boxGray{fill:#f8fafc;stroke:#64748b;stroke-width:2;rx:8}
+      .headText{font:700 22px "Microsoft YaHei","SimHei","SimSun",Arial,sans-serif;fill:#0f5132;text-anchor:middle;dominant-baseline:middle}
+      .clientHead{font:700 22px "Microsoft YaHei","SimHei","SimSun",Arial,sans-serif;fill:#1d4ed8;text-anchor:middle;dominant-baseline:middle}
+      .text{font:700 19px "Microsoft YaHei","SimHei","SimSun",Arial,sans-serif;fill:#111827;text-anchor:middle;dominant-baseline:middle}
+      .small{font:500 14px "Microsoft YaHei","SimHei","SimSun",Arial,sans-serif;fill:#475569;text-anchor:middle}
+      .tiny{font:500 13px "Microsoft YaHei","SimHei","SimSun",Arial,sans-serif;fill:#64748b;text-anchor:middle}
+      .arrow{stroke:#2563eb;stroke-width:3;fill:none;marker-end:url(#arrow)}
+      .arrowGreen{stroke:#059669;stroke-width:3;fill:none;marker-end:url(#arrowGreen)}
+      .arrowOrange{stroke:#d97706;stroke-width:3;fill:none;marker-end:url(#arrowOrange)}
+      .dash{stroke-dasharray:8 6}
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#2563eb"/>
+    </marker>
+    <marker id="arrowGreen" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#059669"/>
+    </marker>
+    <marker id="arrowOrange" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#d97706"/>
+    </marker>
+  </defs>
+
+  <rect class="bg" width="2200" height="1080"/>
+  <text class="title" x="58" y="62">姘寸ɑ浜ч噺棰勬祴绯荤粺鏋舵瀯鍥?/text>
+  <text class="subtitle" x="58" y="96">绾棤浜烘満娴嬩骇绯荤粺 路 绠＄悊鍛樺姙鍏鐢佃剳璁块棶 Web 鍚庡彴 路 鏃犱汉鏈?Jetson 绔疄鏃朵笂浼犳暟鎹?路 闃块噷浜?ECS 閮ㄧ讲 FastAPI銆丮ySQL 涓庢枃浠跺瓨鍌?/text>
+
+  <!-- UAV acquisition side -->
+  <rect class="sourceLane" x="40" y="140" width="270" height="790"/>
+  <rect class="laneHead" x="62" y="166" width="226" height="52"/>
+  <text class="headText" x="175" y="192">鏃犱汉鏈洪噰闆嗙</text>
+
+  <rect class="boxGreen" x="72" y="260" width="206" height="70"/>
+  <text class="text" x="175" y="288">鏃犱汉鏈哄钩鍙?/text>
+  <text class="tiny" x="175" y="314">PX4 / MAVROS / ROS2</text>
+
+  <rect class="boxGreen" x="72" y="370" width="206" height="70"/>
+  <text class="text" x="175" y="398">Sony A7C2</text>
+  <text class="tiny" x="175" y="424">鎷嶇収 / LiveView</text>
+
+  <rect class="boxGreen" x="72" y="480" width="206" height="86"/>
+  <text class="text" x="175" y="508">Jetson 璁＄畻鏈?/text>
+  <text class="tiny" x="175" y="534">杩愯 ROS2 鍔熻兘鍖?/text>
+  <text class="tiny" x="175" y="552">璐熻矗閲囬泦涓庝笂浼?/text>
+
+  <rect class="boxGray" x="72" y="625" width="206" height="96"/>
+  <text class="text" x="175" y="653">瀹炴椂涓婁紶閾捐矾</text>
+  <text class="tiny" x="175" y="679">濮挎€?/ 閫熷害 / 鍔犻€熷害</text>
+  <text class="tiny" x="175" y="699">鐢甸噺 / RTK / 鍗槦鏁?/text>
+
+  <rect class="boxGray" x="72" y="775" width="206" height="96"/>
+  <text class="text" x="175" y="803">鍥惧儚涓婁紶閾捐矾</text>
+  <text class="tiny" x="175" y="829">閲囬泦鍥惧儚涓?GPS</text>
+  <text class="tiny" x="175" y="849">鍏宠仈浠诲姟缂栧彿</text>
+
+  <!-- administrator client side -->
+  <rect class="clientLane" x="350" y="140" width="270" height="355"/>
+  <rect class="laneHead" x="372" y="166" width="226" height="52"/>
+  <text class="clientHead" x="485" y="192">绠＄悊鍛樿闂</text>
+
+  <rect class="boxBlue" x="382" y="258" width="206" height="78"/>
+  <text class="text" x="485" y="286">鍔炲叕瀹ょ數鑴?/text>
+  <text class="tiny" x="485" y="312">绠＄悊鍛樻搷浣滅粓绔?/text>
+
+  <rect class="boxBlue" x="382" y="378" width="206" height="82"/>
+  <text class="text" x="485" y="406">娴忚鍣ㄥぇ灞?/text>
+  <text class="tiny" x="485" y="432">鐧诲綍 / 鍦板浘 / 浠诲姟</text>
+  <text class="tiny" x="485" y="450">鐑姏鍥?/ 瀹炴椂鐢婚潰</text>
+
+  <!-- Cloud/backend layered area -->
+  <rect class="group" x="660" y="140" width="1488" height="790"/>
+  <text class="small" x="1404" y="132">闃块噷浜?ECS 鍚庡彴鏈嶅姟</text>
+
+  <!-- lanes -->
+  <rect class="lane" x="690" y="166" width="222" height="670"/>
+  <rect class="laneHead" x="707" y="188" width="188" height="52"/>
+  <text class="headText" x="801" y="214">鎺ュ叆涓庤〃绀哄眰</text>
+
+  <rect class="lane" x="940" y="166" width="222" height="670"/>
+  <rect class="laneHead" x="957" y="188" width="188" height="52"/>
+  <text class="headText" x="1051" y="214">鎺у埗灞?/text>
+
+  <rect class="lane" x="1190" y="166" width="352" height="670"/>
+  <rect class="laneHead" x="1272" y="188" width="188" height="52"/>
+  <text class="headText" x="1366" y="214">涓氬姟灞?/text>
+
+  <rect class="lane" x="1570" y="166" width="222" height="670"/>
+  <rect class="laneHead" x="1587" y="188" width="188" height="52"/>
+  <text class="headText" x="1681" y="214">鏁版嵁璁块棶灞?/text>
+
+  <rect class="lane" x="1820" y="166" width="298" height="670"/>
+  <rect class="laneHead" x="1875" y="188" width="188" height="52"/>
+  <text class="headText" x="1969" y="214">鎸佷箙灞?/text>
+
+  <!-- presentation/access lane boxes -->
+  <rect class="boxBlue" x="720" y="285" width="162" height="86"/>
+  <text class="text" x="801" y="313">Nginx 椤甸潰</text>
+  <text class="tiny" x="801" y="339">闈欐€佽祫婧愭墭绠?/text>
+  <text class="tiny" x="801" y="359">鍏ュ彛椤甸潰鍔犺浇</text>
+
+  <rect class="boxBlue" x="720" y="455" width="162" height="86"/>
+  <text class="text" x="801" y="483">鍓嶇妯″潡</text>
+  <text class="tiny" x="801" y="509">浠诲姟 / 鍦板浘 / 閲囬泦鐐?/text>
+  <text class="tiny" x="801" y="529">鏃犱汉鏈鸿鎯?/ 浼颁骇</text>
+
+  <rect class="boxBlue" x="720" y="625" width="162" height="86"/>
+  <text class="text" x="801" y="653">API 鍙嶅悜浠ｇ悊</text>
+  <text class="tiny" x="801" y="679">/api 杞彂</text>
+  <text class="tiny" x="801" y="699">涓婁紶鐩綍璁块棶</text>
+
+  <!-- control lane boxes -->
+  <rect class="boxOrange" x="970" y="285" width="162" height="86"/>
+  <text class="text" x="1051" y="313">FastAPI 鎺у埗鍣?/text>
+  <text class="tiny" x="1051" y="339">璁よ瘉 / 璺敱</text>
+  <text class="tiny" x="1051" y="359">璇锋眰鏍￠獙 / 鍝嶅簲灏佽</text>
+
+  <rect class="boxOrange" x="970" y="455" width="162" height="86"/>
+  <text class="text" x="1051" y="483">鎺ュ彛灞?/text>
+  <text class="tiny" x="1051" y="509">REST API</text>
+  <text class="tiny" x="1051" y="529">璁惧寮€鏀句笂浼犳帴鍙?/text>
+
+  <rect class="boxOrange" x="970" y="625" width="162" height="86"/>
+  <text class="text" x="1051" y="653">浼氳瘽鎺у埗</text>
+  <text class="tiny" x="1051" y="679">绠＄悊鍛?Cookie</text>
+  <text class="tiny" x="1051" y="699">楠岃瘉鐮?/ 閫€鍑虹櫥褰?/text>
+
+  <!-- business lane boxes -->
+  <rect class="boxOrange" x="1230" y="270" width="272" height="72"/>
+  <text class="text" x="1366" y="298">浠诲姟涓庡尯鍩熸湇鍔?/text>
+  <text class="tiny" x="1366" y="322">浠诲姟銆佽竟鐣岀偣銆侀潰绉€侀噰闆嗙偣瑙勫垝</text>
+
+  <rect class="boxOrange" x="1230" y="376" width="272" height="72"/>
+  <text class="text" x="1366" y="404">鏃犱汉鏈洪仴娴嬫湇鍔?/text>
+  <text class="tiny" x="1366" y="428">浣嶇疆銆佸Э鎬併€侀€熷害銆佺數閲忋€丷TK</text>
+
+  <rect class="boxOrange" x="1230" y="482" width="272" height="72"/>
+  <text class="text" x="1366" y="510">鍥惧儚涓庨噰闆嗙偣鏈嶅姟</text>
+  <text class="tiny" x="1366" y="534">鍥惧儚鍏ュ簱銆佹煡鐪嬨€佸鍑恒€佹壒閲忕鐞?/text>
+
+  <rect class="boxOrange" x="1230" y="588" width="272" height="72"/>
+  <text class="text" x="1366" y="616">鎸囨爣涓庣儹鍔涙湇鍔?/text>
+  <text class="tiny" x="1366" y="640">绌楀瘑搴︺€佽鐩栫巼銆佹牚楂樸€佷憨浜ч噺</text>
+
+  <rect class="boxOrange" x="1230" y="694" width="272" height="72"/>
+  <text class="text" x="1366" y="722">浼颁骇缁撴灉鏈嶅姟</text>
+  <text class="tiny" x="1366" y="746">骞冲潎浜╀骇銆佹€讳骇閲忋€佷换鍔¤繘搴?/text>
+
+  <!-- DAO lane boxes -->
+  <rect class="boxGray" x="1600" y="318" width="162" height="100"/>
+  <text class="text" x="1681" y="350">DAO</text>
+  <text class="tiny" x="1681" y="376">Schema 妫€鏌?/text>
+  <text class="tiny" x="1681" y="396">SQL 璇诲啓灏佽</text>
+
+  <rect class="boxGray" x="1600" y="548" width="162" height="100"/>
+  <text class="text" x="1681" y="580">鏂囦欢璁块棶</text>
+  <text class="tiny" x="1681" y="606">鍥剧墖璺緞鐢熸垚</text>
+  <text class="tiny" x="1681" y="626">鐡︾墖涓庝笂浼犵洰褰?/text>
+
+  <!-- persistence lane boxes -->
+  <rect class="boxGreen" x="1870" y="300" width="200" height="126"/>
+  <text class="text" x="1970" y="330">MySQL</text>
+  <text class="tiny" x="1970" y="356">missions / devices</text>
+  <text class="tiny" x="1970" y="376">telemetry / images</text>
+  <text class="tiny" x="1970" y="396">metrics / results</text>
+
+  <rect class="boxGreen" x="1870" y="540" width="200" height="126"/>
+  <text class="text" x="1970" y="570">鏂囦欢瀛樺偍</text>
+  <text class="tiny" x="1970" y="596">uploads 鍥惧儚</text>
+  <text class="tiny" x="1970" y="616">LiveView 褰撳墠甯?/text>
+  <text class="tiny" x="1970" y="636">DJI 寤烘ā鐡︾墖</text>
+
+  <!-- administrator access arrows -->
+  <path class="arrow" d="M588 419 C630 419, 660 328, 720 328"/>
+  <text class="tiny" x="645" y="392">绠＄悊鍛橀€氳繃娴忚鍣ㄨ闂悗鍙?/text>
+
+  <!-- cloud internal arrows -->
+  <path class="arrow" d="M882 328 L970 328"/>
+  <path class="arrow" d="M882 498 L970 498"/>
+  <path class="arrow" d="M882 668 L970 498"/>
+  <path class="arrow" d="M1132 328 L1230 306"/>
+  <path class="arrow" d="M1132 498 L1230 518"/>
+  <path class="arrow" d="M1132 668 L1230 730"/>
+
+  <path class="arrowOrange" d="M1502 306 L1600 356"/>
+  <path class="arrowOrange" d="M1502 412 L1600 368"/>
+  <path class="arrowOrange" d="M1502 518 L1600 598"/>
+  <path class="arrowOrange" d="M1502 624 L1600 598"/>
+  <path class="arrowOrange" d="M1502 730 L1600 388"/>
+  <path class="arrowGreen" d="M1762 368 L1870 356"/>
+  <path class="arrowGreen" d="M1762 598 L1870 603"/>
+
+  <!-- UAV to backend upload arrows -->
+  <path class="arrowGreen" d="M278 673 C470 673, 780 498, 970 498"/>
+  <text class="tiny" x="610" y="650">POST /api/telemetry銆?api/live-frame</text>
+
+  <path class="arrowGreen" d="M278 823 C500 823, 760 520, 970 498"/>
+  <text class="tiny" x="612" y="772">POST /api/capture-images</text>
+
+  <!-- result back to page -->
+  <path class="arrow dash" d="M1230 730 C1100 830, 900 800, 801 541"/>
+  <text class="tiny" x="1015" y="815">鏌ヨ缁撴灉杩斿洖鍔炲叕瀹ゆ祻瑙堝櫒椤甸潰灞曠ず</text>
+
+  <rect class="boxGray" x="720" y="875" width="1350" height="54"/>
+  <text class="small" x="1395" y="907">閮ㄧ讲褰㈡€侊細闃块噷浜?ECS 涓婅繍琛?yield-prod-web锛圢ginx锛夈€亂ield-prod-api锛團astAPI锛夈€亂ield-prod-mysql锛圡ySQL锛夛紱涓婁紶鍥惧儚銆丩iveView 褰撳墠甯у拰 DJI 寤烘ā鍦板浘鐡︾墖鎸傝浇鍦ㄦ湇鍔″櫒鏈湴鐩綍銆?/text>
+
+  <text class="tiny" x="58" y="1002">璇存槑锛氭祻瑙堝櫒澶у睆鐢辩鐞嗗憳鍦ㄥ姙鍏鐢佃剳璁块棶闃块噷浜戝悗鍙帮紱Jetson 鏄棤浜烘満绔绠楁満锛屽彧璐熻矗閲囬泦涓庝笂浼犳暟鎹紝涓嶆壙鎷呭悗鍙伴〉闈㈣闂姛鑳姐€?/text>
+</svg>
+

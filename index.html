@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>水稻产量预测系统</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="auth-pending">
+    <section class="login-view" id="loginView" aria-label="系统登录">
+      <div class="login-brand">
+        <h1>水稻产量预测系统</h1>
+        <strong>v1.3.1.20260612.beta</strong>
+      </div>
+      <form class="login-card" id="loginForm" autocomplete="on">
+        <div>
+          <h2>管理员登录</h2>
+        </div>
+        <label>
+          <span>用户名</span>
+          <input id="loginUsername" name="username" type="text" autocomplete="username" value="admin" required />
+        </label>
+        <label>
+          <span>密码</span>
+          <input id="loginPassword" name="password" type="password" autocomplete="current-password" required />
+        </label>
+        <label>
+          <span>验证码</span>
+          <div class="captcha-row">
+            <input id="loginCaptcha" name="captcha" type="text" inputmode="latin" autocomplete="off" maxlength="4" required />
+            <button class="captcha-code" id="captchaRefresh" type="button" aria-label="刷新验证码">----</button>
+          </div>
+        </label>
+        <p class="login-error" id="loginError" role="alert"></p>
+        <button class="primary-btn login-submit" type="submit">登录系统</button>
+      </form>
+    </section>
+
+    <main class="shell" id="appShell" hidden>
+      <header class="topbar app-header">
+        <div class="meta-card weather-card header-weather">
+          <div class="weather-visual">
+            <span class="weather-icon weather-icon-cloud" id="weatherIcon" aria-hidden="true"></span>
+            <div>
+              <strong id="weatherSummary">获取中</strong>
+              <em id="weatherDetail">--℃ · 风 -- · 湿度 --</em>
+            </div>
+          </div>
+          <button type="button" id="weatherLocationButton">设置位置</button>
+        </div>
+        <div class="system-heading">
+          <h1 id="pageTitle">水稻产量预测系统</h1>
+          <span class="version-badge" id="systemVersion">v1.3.1.20260612.beta</span>
+        </div>
+        <div class="header-right">
+          <div class="meta-card time-card header-time">
+            <span>当前时间</span>
+            <strong id="currentTime">--:--:--</strong>
+            <em id="currentDate">----/--/--</em>
+          </div>
+          <button class="ghost-btn logout-btn" id="logoutButton" type="button">退出登录</button>
+        </div>
+      </header>
+
+      <section class="dashboard-layout" aria-label="水稻产量预测总览">
+        <aside class="left-rail" aria-label="任务与核心指标">
+          <div class="panel left-panel">
+            <div class="left-task-card" aria-label="当前任务">
+              <span>当前任务</span>
+              <select id="taskSelect" class="task-select" aria-label="选择采集任务"></select>
+            </div>
+            <section class="kpi-grid" id="overview" aria-label="核心指标">
+              <article class="kpi">
+                <span>无人机估测总产量</span>
+                <strong id="fusionYieldValue">12.87 吨</strong>
+                <em id="yieldConfidence">估测置信度 92.6%</em>
+              </article>
+              <article class="kpi">
+                <span>无人机采集点</span>
+                <strong id="sampleCount">24 个</strong>
+                <em id="sampleProgress">已采集 21 个 · 87.5%</em>
+              </article>
+              <article class="kpi task-time-kpi">
+                <span>任务进度</span>
+                <strong id="taskProgressPercent">0%</strong>
+                <div class="task-progress-strip" aria-label="当前任务进度">
+                  <div class="task-progress-track">
+                    <i id="taskProgressBar" style="width: 0%"></i>
+                  </div>
+                </div>
+                <em id="taskTimeSummary">
+                  <span>预计 0 分钟</span>
+                  <span>剩余 0 分钟</span>
+                </em>
+              </article>
+              <article class="kpi">
+                <span>覆盖面积</span>
+                <label class="area-setting">
+                  <input id="fieldAreaInput" type="number" min="1" max="999" step="0.1" aria-label="覆盖面积" readonly />
+                  <b>亩</b>
+                </label>
+                <em id="areaTaskLabel">暂无任务 · 等待区域计算</em>
+              </article>
+            </section>
+            <div class="left-task-actions" aria-label="任务操作">
+              <button class="ghost-btn" id="newTaskButton" type="button">新建任务</button>
+              <button class="ghost-btn" id="renameTaskButton" type="button">修改任务名</button>
+              <button class="danger-btn" id="deleteTaskButton" type="button">删除任务</button>
+              <button class="ghost-btn" id="syncButton" type="button">同步采集数据</button>
+              <button class="primary-btn" id="generateMissionButton" type="button">生成无人机任务</button>
+              <button class="primary-btn load-uav-btn" id="loadMissionButton" type="button">加载任务到无人机</button>
+            </div>
+          </div>
+        </aside>
+
+        <section class="main-grid center-workspace">
+          <article class="panel map-panel" id="mission">
+            <div class="panel-head">
+              <div class="legend">
+                <span><i class="drone-dot"></i>无人机</span>
+              </div>
+            </div>
+            <div class="map-toolbar">
+              <div class="heatmap-tabs" aria-label="数据热力图切换">
+                <button class="active" type="button" data-layer="yieldPerMu">亩产量</button>
+                <button type="button" data-layer="panicleDensity">穗密度</button>
+                <button type="button" data-layer="panicleCoverage">穗覆盖率</button>
+                <button type="button" data-layer="plantHeight">株高</button>
+              </div>
+              <div class="mission-tools">
+                <button type="button" id="areaDrawButton">设置任务区域</button>
+                <button type="button" id="areaConfirmButton" disabled>确认任务区域</button>
+                <button type="button" id="areaClearButton">清空区域</button>
+                <span id="areaDrawStatus">点击“设置任务区域”后，在地图上依次选择边界点</span>
+              </div>
+              <div class="batch-tools">
+                <button type="button" id="batchManageButton">批量管理采集点</button>
+                <select id="batchMissionSelect" aria-label="批量更改所属任务" hidden></select>
+                <button type="button" id="batchMoveButton" hidden disabled>批量更改任务</button>
+                <button type="button" id="batchDeleteButton" class="danger" hidden disabled>批量删除</button>
+                <span id="batchManageStatus">选择多个采集点后批量操作</span>
+              </div>
+            </div>
+            <div class="field-map" id="fieldMap">
+              <div class="map-fallback" id="mapFallback">
+                <strong>地图加载中</strong>
+                <span>正在加载田块建模瓦片并渲染空地协同采集任务</span>
+              </div>
+              <div class="map-controls" aria-label="地图缩放控制">
+                <button type="button" id="zoomInButton" aria-label="放大地图">+</button>
+                <button type="button" id="zoomOutButton" aria-label="缩小地图">−</button>
+              </div>
+              <div class="heat-legend" id="heatLegend" aria-label="热力图标尺">
+                <span id="heatLegendTitle">穗密度</span>
+                <div class="heat-scale"></div>
+                <div class="heat-scale-labels">
+                  <em id="heatMinLabel">180</em>
+                  <em id="heatMaxLabel">360 panicles/m2</em>
+                </div>
+              </div>
+              <div class="map-readout">
+                <span id="currentTaskLabel">当前任务：暂无任务</span>
+              </div>
+              <div class="point-tooltip" id="pointTooltip"></div>
+            </div>
+          </article>
+        </section>
+
+        <aside class="right-rail" aria-label="无人机详情">
+          <article class="panel status-panel drone-detail-panel" id="devices">
+            <div class="panel-head">
+              <div>
+                <h2 id="droneTitle">UAV-01</h2>
+                <div class="drone-battery-strip" aria-label="无人机电量">
+                  <span>电量</span>
+                  <div class="drone-battery-track">
+                    <i id="droneBatteryBar" style="width: 82%"></i>
+                  </div>
+                  <strong id="droneBattery">82%</strong>
+                </div>
+              </div>
+              <label class="drone-switcher">
+                <span>切换无人机</span>
+                <select id="droneSelect" aria-label="切换无人机">
+                  <option value="UAV-01">UAV-01</option>
+                  <option value="UAV-02">UAV-02</option>
+                  <option value="UAV-03">UAV-03</option>
+                </select>
+              </label>
+            </div>
+
+            <div class="drone-detail-layout">
+              <div class="drone-visual-card">
+                <div class="drone-state" id="droneFlightMode">等待数据</div>
+                <div class="drone-model-stage" aria-label="无人机姿态模型">
+                  <img class="drone-model real-drone-model" id="droneModel" src="./assets/drone/uav-realistic.svg" alt="无人机模型">
+                  <span class="attitude-ring ring-main"></span>
+                  <span class="attitude-ring ring-soft"></span>
+                </div>
+                <p id="droneAttitudeStatus">等待姿态数据</p>
+              </div>
+
+              <div class="drone-command-row" aria-label="无人机控制">
+                <button class="primary-btn" id="executeMissionButton" type="button">执行任务</button>
+                <button class="danger-btn" id="returnHomeButton" type="button">返航</button>
+              </div>
+
+              <div class="drone-live-view" aria-label="无人机实时画面">
+                <div class="live-view-head">
+                  <span><i class="status-light error" id="droneVideoStatusLight"></i>实时画面</span>
+                  <strong id="droneVideoStatus">等待视频流</strong>
+                </div>
+                <div class="live-view-screen">
+                  <img id="droneLiveFrame" class="live-view-frame" alt="UAV LiveView" hidden />
+                  <em>UAV CAMERA</em>
+                </div>
+              </div>
+
+              <div class="drone-metrics">
+                <div class="drone-metric">
+                  <span><i class="status-light ok"></i>无人机状态</span>
+                  <strong id="droneModeValue">等待数据</strong>
+                </div>
+                <div class="drone-metric">
+                  <span><i class="status-light ok"></i>链路模式</span>
+                  <strong id="droneLinkMode">--</strong>
+                </div>
+                <div class="drone-metric">
+                  <span><i class="status-light ok"></i>信号强度</span>
+                  <strong id="droneSignalStrength">--</strong>
+                </div>
+                <div class="drone-metric">
+                  <span><i class="status-light ok"></i>搜星质量</span>
+                  <strong id="dronePositioningQuality">--</strong>
+                </div>
+                <div class="drone-metric">
+                  <span><i class="status-light ok"></i>卫星数</span>
+                  <strong id="droneSatelliteCount">-- 颗</strong>
+                </div>
+                <div class="drone-metric">
+                  <span><i class="status-light ok"></i>高度</span>
+                  <strong id="droneAltitude">-- m</strong>
+                </div>
+                <div class="drone-metric metric-wide">
+                  <span><i class="status-light ok"></i>三轴速度</span>
+                  <strong><b>X</b> <i id="droneVx">-- m/s</i> <b>Y</b> <i id="droneVy">-- m/s</i> <b>Z</b> <i id="droneVz">-- m/s</i></strong>
+                </div>
+                <div class="drone-metric metric-wide">
+                  <span><i class="status-light ok"></i>三轴加速度</span>
+                  <strong><b>X</b> <i id="droneAx">-- m/s²</i> <b>Y</b> <i id="droneAy">-- m/s²</i> <b>Z</b> <i id="droneAz">-- m/s²</i></strong>
+                </div>
+              </div>
+            </div>
+          </article>
+        </aside>
+      </section>
+      <section class="bottom-grid" id="fusion"></section>
+    </main>
+
+    <div class="image-viewer" id="imageViewer" aria-hidden="true">
+      <button class="viewer-close" id="viewerClose" aria-label="关闭大图">×</button>
+      <button class="viewer-export" id="viewerExport" type="button">导出图像</button>
+      <img id="viewerImage" alt="采集图像大图" />
+    </div>
+
+    <div class="image-group-viewer" id="imageGroupViewer" aria-hidden="true">
+      <div class="image-group-panel">
+        <div class="image-group-head">
+          <div>
+            <span id="imageGroupSubtitle">采集点图像</span>
+            <strong id="imageGroupTitle">同一坐标图像</strong>
+          </div>
+          <button class="viewer-close inline" id="imageGroupClose" aria-label="关闭图像列表">×</button>
+        </div>
+        <div class="image-group-grid" id="imageGroupGrid"></div>
+      </div>
+    </div>
+
+    <script src="./config.js?v=202606161650"></script>
+    <script src="./app.js?v=202606161650"></script>
+  </body>
+</html>

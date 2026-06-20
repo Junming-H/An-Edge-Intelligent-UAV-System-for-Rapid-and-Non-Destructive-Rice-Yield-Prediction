@@ -1,0 +1,250 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="2600" height="1450" viewBox="0 0 2600 1450">
+  <defs>
+    <style>
+      .bg{fill:#fff}
+      .title{font:700 34px "SimSun","Songti SC","Microsoft YaHei",serif;fill:#111827}
+      .note{font:500 18px "SimSun","Songti SC","Microsoft YaHei",serif;fill:#374151}
+      .entity{fill:#fff;stroke:#222;stroke-width:2.2}
+      .attr{fill:#fff;stroke:#555;stroke-width:1.8}
+      .relation{fill:#fff;stroke:#222;stroke-width:2}
+      .line{stroke:#333;stroke-width:1.8;fill:none}
+      .entityText{font:700 25px "SimSun","Songti SC","Microsoft YaHei",serif;fill:#111;text-anchor:middle;dominant-baseline:middle}
+      .relText{font:700 20px "SimSun","Songti SC","Microsoft YaHei",serif;fill:#111;text-anchor:middle;dominant-baseline:middle}
+      .attrText{font:600 18px "SimSun","Songti SC","Microsoft YaHei",serif;fill:#111;text-anchor:middle;dominant-baseline:middle}
+      .key{font:600 18px "SimSun","Songti SC","Microsoft YaHei",serif;fill:#111;text-anchor:middle;dominant-baseline:middle;text-decoration:underline}
+      .card{font:700 20px "Times New Roman","SimSun",serif;fill:#111;text-anchor:middle;dominant-baseline:middle}
+    </style>
+  </defs>
+
+  <rect class="bg" width="2600" height="1450"/>
+  <text class="title" x="80" y="64">姘寸ɑ浜ч噺棰勬祴绯荤粺鎬讳綋 E-R 鍥?/text>
+  <text class="note" x="80" y="105">璇存槑锛氱煩褰㈣〃绀哄疄浣擄紝妞渾琛ㄧず灞炴€э紝鑿卞舰琛ㄧず瀹炰綋闂磋仈绯伙紱甯︿笅鍒掔嚎灞炴€т负涓婚敭锛屽浘涓?1銆丯 琛ㄧず瀹炰綋闂村熀鏁板叧绯汇€?/text>
+
+  <!-- 浠诲姟鍖哄煙 -->
+  <rect class="entity" x="260" y="270" width="220" height="72"/>
+  <text class="entityText" x="370" y="306">浠诲姟鍖哄煙</text>
+  <ellipse class="attr" cx="170" cy="190" rx="105" ry="34"/>
+  <text class="key" x="170" y="190">鍖哄煙缂栧彿</text>
+  <ellipse class="attr" cx="390" cy="180" rx="105" ry="34"/>
+  <text class="attrText" x="390" y="180">瑕嗙洊闈㈢Н</text>
+  <ellipse class="attr" cx="150" cy="306" rx="105" ry="34"/>
+  <text class="attrText" x="150" y="306">杈圭晫鐐?/text>
+  <ellipse class="attr" cx="170" cy="430" rx="120" ry="34"/>
+  <text class="attrText" x="170" y="430">瑙勫垝閲囬泦鐐?/text>
+  <ellipse class="attr" cx="400" cy="438" rx="105" ry="34"/>
+  <text class="attrText" x="400" y="438">纭鐘舵€?/text>
+  <path class="line" d="M235 210 L300 270"/>
+  <path class="line" d="M390 214 L390 270"/>
+  <path class="line" d="M255 306 L260 306"/>
+  <path class="line" d="M265 415 L305 342"/>
+  <path class="line" d="M400 404 L400 342"/>
+
+  <!-- 浠诲姟 -->
+  <rect class="entity" x="1030" y="270" width="220" height="72"/>
+  <text class="entityText" x="1140" y="306">浠诲姟</text>
+  <ellipse class="attr" cx="1140" cy="180" rx="105" ry="34"/>
+  <text class="key" x="1140" y="180">浠诲姟缂栧彿</text>
+  <ellipse class="attr" cx="920" cy="215" rx="105" ry="34"/>
+  <text class="attrText" x="920" y="215">鐢板潡鍚嶇О</text>
+  <ellipse class="attr" cx="1360" cy="215" rx="105" ry="34"/>
+  <text class="attrText" x="1360" y="215">浠诲姟鐘舵€?/text>
+  <ellipse class="attr" cx="1140" cy="438" rx="105" ry="34"/>
+  <text class="attrText" x="1140" y="438">鍒涘缓鏃堕棿</text>
+  <path class="line" d="M1140 214 L1140 270"/>
+  <path class="line" d="M1005 232 L1060 270"/>
+  <path class="line" d="M1275 232 L1220 270"/>
+  <path class="line" d="M1140 342 L1140 404"/>
+
+  <!-- 浼颁骇缁撴灉 -->
+  <rect class="entity" x="1780" y="270" width="240" height="72"/>
+  <text class="entityText" x="1900" y="306">浼颁骇缁撴灉</text>
+  <ellipse class="attr" cx="1900" cy="180" rx="105" ry="34"/>
+  <text class="key" x="1900" y="180">缁撴灉缂栧彿</text>
+  <ellipse class="attr" cx="2140" cy="195" rx="110" ry="34"/>
+  <text class="attrText" x="2140" y="195">骞冲潎浜╀骇</text>
+  <ellipse class="attr" cx="2200" cy="306" rx="130" ry="34"/>
+  <text class="attrText" x="2200" y="306">浼版祴鎬讳骇閲?/text>
+  <ellipse class="attr" cx="2195" cy="430" rx="120" ry="34"/>
+  <text class="attrText" x="2195" y="430">浼扮畻缃俊搴?/text>
+  <ellipse class="attr" cx="1900" cy="438" rx="120" ry="34"/>
+  <text class="attrText" x="1900" y="438">閲囬泦鐐规暟閲?/text>
+  <path class="line" d="M1900 214 L1900 270"/>
+  <path class="line" d="M2060 215 L1990 270"/>
+  <path class="line" d="M2070 306 L2020 306"/>
+  <path class="line" d="M2090 415 L1995 342"/>
+  <path class="line" d="M1900 404 L1900 342"/>
+
+  <!-- 鏃犱汉鏈鸿澶?-->
+  <rect class="entity" x="260" y="735" width="220" height="72"/>
+  <text class="entityText" x="370" y="771">鏃犱汉鏈鸿澶?/text>
+  <ellipse class="attr" cx="165" cy="650" rx="105" ry="34"/>
+  <text class="key" x="165" y="650">璁惧缂栧彿</text>
+  <ellipse class="attr" cx="390" cy="632" rx="105" ry="34"/>
+  <text class="attrText" x="390" y="632">璁惧鍚嶇О</text>
+  <ellipse class="attr" cx="145" cy="780" rx="105" ry="34"/>
+  <text class="attrText" x="145" y="780">璁惧绫诲瀷</text>
+  <ellipse class="attr" cx="165" cy="920" rx="95" ry="34"/>
+  <text class="attrText" x="165" y="920">鐢甸噺</text>
+  <ellipse class="attr" cx="400" cy="930" rx="105" ry="34"/>
+  <text class="attrText" x="400" y="930">鍦ㄧ嚎鐘舵€?/text>
+  <path class="line" d="M230 668 L302 735"/>
+  <path class="line" d="M390 666 L390 735"/>
+  <path class="line" d="M250 780 L260 780"/>
+  <path class="line" d="M235 902 L305 807"/>
+  <path class="line" d="M400 896 L400 807"/>
+
+  <!-- 閬ユ祴璁板綍 -->
+  <rect class="entity" x="1030" y="735" width="220" height="72"/>
+  <text class="entityText" x="1140" y="771">閬ユ祴璁板綍</text>
+  <ellipse class="attr" cx="890" cy="665" rx="105" ry="34"/>
+  <text class="key" x="890" y="665">閬ユ祴缂栧彿</text>
+  <ellipse class="attr" cx="1055" cy="625" rx="88" ry="32"/>
+  <text class="attrText" x="1055" y="625">缁忓害</text>
+  <ellipse class="attr" cx="1225" cy="625" rx="88" ry="32"/>
+  <text class="attrText" x="1225" y="625">绾害</text>
+  <ellipse class="attr" cx="1405" cy="665" rx="88" ry="32"/>
+  <text class="attrText" x="1405" y="665">楂樺害</text>
+  <ellipse class="attr" cx="890" cy="900" rx="105" ry="34"/>
+  <text class="attrText" x="890" y="900">涓夎酱閫熷害</text>
+  <ellipse class="attr" cx="1140" cy="960" rx="115" ry="34"/>
+  <text class="attrText" x="1140" y="960">涓夎酱鍔犻€熷害</text>
+  <ellipse class="attr" cx="1395" cy="900" rx="105" ry="34"/>
+  <text class="attrText" x="1395" y="900">濮挎€佽</text>
+  <ellipse class="attr" cx="1140" cy="1060" rx="105" ry="34"/>
+  <text class="attrText" x="1140" y="1060">椋炶妯″紡</text>
+  <ellipse class="attr" cx="1458" cy="770" rx="120" ry="34"/>
+  <text class="attrText" x="1458" y="770">RTK/鍗槦鏁?/text>
+  <path class="line" d="M970 680 L1040 735"/>
+  <path class="line" d="M1075 657 L1095 735"/>
+  <path class="line" d="M1210 657 L1180 735"/>
+  <path class="line" d="M1338 680 L1240 735"/>
+  <path class="line" d="M965 882 L1050 807"/>
+  <path class="line" d="M1140 926 L1140 807"/>
+  <path class="line" d="M1316 882 L1230 807"/>
+  <path class="line" d="M1140 1026 L1140 807"/>
+  <path class="line" d="M1338 770 L1250 770"/>
+
+  <!-- 閲囬泦鍥惧儚 -->
+  <rect class="entity" x="1710" y="735" width="230" height="72"/>
+  <text class="entityText" x="1825" y="771">閲囬泦鍥惧儚</text>
+  <ellipse class="attr" cx="1660" cy="645" rx="105" ry="34"/>
+  <text class="key" x="1660" y="645">鍥惧儚缂栧彿</text>
+  <ellipse class="attr" cx="1900" cy="632" rx="115" ry="34"/>
+  <text class="attrText" x="1900" y="632">鍥惧儚璺緞</text>
+  <ellipse class="attr" cx="1605" cy="915" rx="110" ry="34"/>
+  <text class="attrText" x="1605" y="915">鎷嶆憚浣嶇疆</text>
+  <ellipse class="attr" cx="1825" cy="970" rx="110" ry="34"/>
+  <text class="attrText" x="1825" y="970">鎷嶆憚鏃堕棿</text>
+  <ellipse class="attr" cx="2025" cy="920" rx="110" ry="34"/>
+  <text class="attrText" x="2025" y="920">鎵€灞炰换鍔?/text>
+  <path class="line" d="M1710 668 L1760 735"/>
+  <path class="line" d="M1900 666 L1875 735"/>
+  <path class="line" d="M1675 895 L1742 807"/>
+  <path class="line" d="M1825 936 L1825 807"/>
+  <path class="line" d="M1962 900 L1900 807"/>
+
+  <!-- 閲囬泦鎸囨爣 -->
+  <rect class="entity" x="2070" y="735" width="230" height="72"/>
+  <text class="entityText" x="2185" y="771">閲囬泦鎸囨爣</text>
+  <ellipse class="attr" cx="2185" cy="645" rx="105" ry="34"/>
+  <text class="key" x="2185" y="645">鎸囨爣缂栧彿</text>
+  <ellipse class="attr" cx="2390" cy="690" rx="88" ry="32"/>
+  <text class="attrText" x="2390" y="690">绌楀瘑搴?/text>
+  <ellipse class="attr" cx="2405" cy="790" rx="105" ry="32"/>
+  <text class="attrText" x="2405" y="790">绌楄鐩栫巼</text>
+  <ellipse class="attr" cx="2390" cy="890" rx="88" ry="32"/>
+  <text class="attrText" x="2390" y="890">鏍珮</text>
+  <ellipse class="attr" cx="2185" cy="1000" rx="90" ry="34"/>
+  <text class="attrText" x="2185" y="1000">浜╀骇閲?/text>
+  <ellipse class="attr" cx="2025" cy="1030" rx="105" ry="34"/>
+  <text class="attrText" x="2025" y="1030">鎸囨爣鏉ユ簮</text>
+  <path class="line" d="M2185 679 L2185 735"/>
+  <path class="line" d="M2322 700 L2228 735"/>
+  <path class="line" d="M2300 790 L2300 790"/>
+  <path class="line" d="M2324 875 L2228 807"/>
+  <path class="line" d="M2185 966 L2185 807"/>
+  <path class="line" d="M2078 1008 L2130 807"/>
+
+  <!-- 瀹炴椂鐢婚潰 -->
+  <rect class="entity" x="260" y="1220" width="220" height="72"/>
+  <text class="entityText" x="370" y="1256">瀹炴椂鐢婚潰</text>
+  <ellipse class="attr" cx="150" cy="1168" rx="105" ry="34"/>
+  <text class="key" x="150" y="1168">鐢婚潰缂栧彿</text>
+  <ellipse class="attr" cx="600" cy="1168" rx="105" ry="34"/>
+  <text class="attrText" x="600" y="1168">璁惧缂栧彿</text>
+  <ellipse class="attr" cx="150" cy="1360" rx="105" ry="34"/>
+  <text class="attrText" x="150" y="1360">鐢婚潰璺緞</text>
+  <ellipse class="attr" cx="600" cy="1360" rx="105" ry="34"/>
+  <text class="attrText" x="600" y="1360">鏇存柊鏃堕棿</text>
+  <path class="line" d="M235 1185 L285 1220"/>
+  <path class="line" d="M525 1185 L455 1220"/>
+  <path class="line" d="M235 1343 L285 1292"/>
+  <path class="line" d="M525 1343 L455 1292"/>
+
+  <!-- 鍏崇郴锛氫换鍔″尯鍩?浠诲姟 -->
+  <polygon class="relation" points="750,250 825,306 750,362 675,306"/>
+  <text class="relText" x="750" y="306">璁剧疆</text>
+  <path class="line" d="M480 306 L675 306"/>
+  <path class="line" d="M825 306 L1030 306"/>
+  <text class="card" x="520" y="288">1</text>
+  <text class="card" x="990" y="288">1</text>
+
+  <!-- 鍏崇郴锛氫换鍔?浼颁骇缁撴灉 -->
+  <polygon class="relation" points="1530,250 1605,306 1530,362 1455,306"/>
+  <text class="relText" x="1530" y="306">鐢熸垚</text>
+  <path class="line" d="M1250 306 L1455 306"/>
+  <path class="line" d="M1605 306 L1780 306"/>
+  <text class="card" x="1290" y="288">1</text>
+  <text class="card" x="1740" y="288">1</text>
+
+  <!-- 鍏崇郴锛氫换鍔?閬ユ祴璁板綍 -->
+  <polygon class="relation" points="1140,500 1215,555 1140,610 1065,555"/>
+  <text class="relText" x="1140" y="555">褰掑睘</text>
+  <path class="line" d="M1140 342 L1140 500"/>
+  <path class="line" d="M1140 610 L1140 735"/>
+  <text class="card" x="1170" y="385">1</text>
+  <text class="card" x="1170" y="705">N</text>
+
+  <!-- 鍏崇郴锛氭棤浜烘満璁惧-閬ユ祴璁板綍 -->
+  <polygon class="relation" points="740,715 815,771 740,827 665,771"/>
+  <text class="relText" x="740" y="771">浜х敓</text>
+  <path class="line" d="M480 771 L665 771"/>
+  <path class="line" d="M815 771 L1030 771"/>
+  <text class="card" x="520" y="752">1</text>
+  <text class="card" x="990" y="752">N</text>
+
+  <!-- 鍏崇郴锛氫换鍔?閲囬泦鍥惧儚 -->
+  <polygon class="relation" points="1530,610 1605,665 1530,720 1455,665"/>
+  <text class="relText" x="1530" y="665">鍖呭惈</text>
+  <path class="line" d="M1250 342 L1455 665"/>
+  <path class="line" d="M1605 665 L1710 735"/>
+  <text class="card" x="1290" y="380">1</text>
+  <text class="card" x="1680" y="708">N</text>
+
+  <!-- 鍏崇郴锛氶噰闆嗗浘鍍?閲囬泦鎸囨爣 -->
+  <polygon class="relation" points="2005,724 2075,771 2005,818 1935,771"/>
+  <text class="relText" x="2005" y="771">瀵瑰簲</text>
+  <path class="line" d="M1940 771 L1935 771"/>
+  <path class="line" d="M2075 771 L2070 771"/>
+  <text class="card" x="1962" y="746">1</text>
+  <text class="card" x="2048" y="746">1</text>
+
+  <!-- 鍏崇郴锛氶噰闆嗘寚鏍?浼颁骇缁撴灉 -->
+  <polygon class="relation" points="2190,500 2260,555 2190,610 2120,555"/>
+  <text class="relText" x="2190" y="555">姹囨€?/text>
+  <path class="line" d="M1900 342 L1900 555 L2120 555"/>
+  <path class="line" d="M2190 610 L2185 735"/>
+  <text class="card" x="2038" y="382">1</text>
+  <text class="card" x="2208" y="705">N</text>
+
+  <!-- 鍏崇郴锛氭棤浜烘満璁惧-瀹炴椂鐢婚潰 -->
+  <polygon class="relation" points="370,980 440,1035 370,1090 300,1035"/>
+  <text class="relText" x="370" y="1035">涓婁紶</text>
+  <path class="line" d="M370 807 L370 980"/>
+  <path class="line" d="M370 1090 L370 1220"/>
+  <text class="card" x="400" y="850">1</text>
+  <text class="card" x="400" y="1185">1</text>
+
+  <text class="note" x="80" y="1420">娉細鏈浘浠呮弿杩板悗鍙版暟鎹簱涓昏瀹炰綋鍙婂叾鍏崇郴锛涘綋鍓嶇増鏈互绾棤浜烘満娴嬩骇涓轰富锛岄噰闆嗘寚鏍囧寘鍚瀵嗗害銆佺瑕嗙洊鐜囥€佹牚楂樺拰浜╀骇閲忕瓑鏍稿績瀛楁銆?/text>
+</svg>
+
