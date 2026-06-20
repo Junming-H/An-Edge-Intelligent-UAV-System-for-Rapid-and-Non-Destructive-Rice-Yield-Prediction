@@ -1,73 +1,75 @@
-# 水稻产量预测系统
+# Rice Yield Prediction System
 
-面向实际部署的无人机水稻测产后台系统。系统由前端管理大屏、FastAPI 后端、MySQL 数据库和 Nginx 静态资源服务组成，业务数据均通过 API 写入和读取，不内置演示任务、演示设备或模拟测产数据。
+An API-driven UAV rice yield prediction backend system for real deployment. The project includes a browser-based dashboard, FastAPI backend, MySQL database schema, Nginx deployment configuration, and technical documentation.
 
-## 功能范围
+The repository is kept as source code only. Runtime data, uploaded images, large DJI map tiles, deployment archives, Jetson backups, and temporary analysis files are intentionally excluded from Git.
 
-- 管理员登录与退出登录
-- 任务创建、重命名、删除、区域设置和任务点规划
-- 无人机遥测数据接收与展示
-- 无人机实时画面接收与展示
-- 采集图像上传、查询、导出、删除和任务归属修改
-- 采集指标与产量结果存储
-- DJI 建模地图/热力图资源接入
-- Docker Compose 一键部署
+## Features
 
-## 项目结构
+- Administrator login and logout
+- Mission creation, rename, deletion, area setting, and waypoint planning
+- UAV telemetry ingestion and dashboard display
+- UAV live-frame ingestion and preview
+- Capture image upload, query, export, deletion, and mission reassignment
+- Capture metric and yield result persistence
+- Map/heatmap resource integration
+- Docker Compose deployment
+
+## Project Structure
 
 ```text
 .
-├── index.html                 # 前端页面
-├── styles.css                 # 页面样式
-├── app.js                     # 前端业务逻辑
-├── config.js                  # 前端运行配置
+├── index.html
+├── styles.css
+├── app.js
+├── config.js
 ├── backend/
-│   ├── main.py                # FastAPI 接口
-│   ├── requirements.txt       # 后端依赖
-│   └── Dockerfile             # API 镜像
+│   ├── main.py
+│   ├── requirements.txt
+│   └── Dockerfile
 ├── deploy/
-│   ├── mysql/schema.sql       # MySQL 初始化表结构
-│   └── nginx/                 # Nginx 配置
-├── docs/                      # 技术文档与论文配图
-├── docker-compose.yml         # 本地/服务器部署编排
-├── .env.example               # 环境变量模板
+│   ├── mysql/schema.sql
+│   └── nginx/
+├── docs/
+├── docker-compose.yml
+├── .env.example
 └── README.md
 ```
 
-## 本地启动
+## Quick Start
 
-1. 复制环境变量模板：
+Copy the environment template:
 
 ```bash
 cp .env.example .env
 ```
 
-2. 修改 `.env` 中的数据库密码和 `AUTH_SECRET`。
-
-3. 启动服务：
+Edit `.env`, then start the stack:
 
 ```bash
 docker compose up -d --build
 ```
 
-4. 访问：
+Open:
 
 ```text
 http://localhost
 ```
 
-默认管理员账号密码来自环境变量：
+Default administrator credentials are read from environment variables:
 
 ```text
 ADMIN_USERNAME=admin
 ADMIN_PASSWORD=admin
 ```
 
-## 数据库
+For production, change all default passwords and set a strong `AUTH_SECRET`.
 
-数据库按空库启动，不写入示例任务、示例设备、示例图像或演示产量。任务、遥测、实时画面、采集图像、指标和估产结果都通过 API 写入。
+## Database
 
-主要数据表：
+The database starts empty. It does not seed demo missions, devices, images, metrics, or yield values. All business data must be written through API calls.
+
+Main tables:
 
 - `devices`
 - `missions`
@@ -78,7 +80,7 @@ ADMIN_PASSWORD=admin
 - `yield_results`
 - `live_frames`
 
-## 主要接口
+## Main APIs
 
 - `POST /api/auth/login`
 - `GET /api/auth/me`
@@ -102,13 +104,17 @@ ADMIN_PASSWORD=admin
 - `PUT /api/capture-image-batches/mission`
 - `GET /api/yield-results`
 
-## 地图与大资源
+## Map and Large Assets
 
-本仓库默认只保留后台系统源码和必要轻量资源。DJI 建模地图瓦片、历史采集图片、部署压缩包、Jetson 备份等大文件不建议直接提交到普通 Git 历史。
+Large map tiles and historical capture images should not be committed directly to normal Git history. Use one of these approaches:
 
-如需在 GitHub 中管理大地图资源，建议使用 Git LFS；也可以把 `assets/model_map/` 作为独立资源包发布，并在部署时放回同名目录。
+- publish `assets/model_map/` as a separate resource package;
+- manage large assets with Git LFS;
+- mount map and upload directories directly on the deployment server.
 
-## 检查命令
+`config.js` intentionally contains empty map service credentials. Fill in your own key locally or in deployment.
+
+## Checks
 
 ```bash
 python -m compileall backend
@@ -117,4 +123,4 @@ node --check app.js
 
 ## License
 
-See `LICENSE`.
+MIT License.
