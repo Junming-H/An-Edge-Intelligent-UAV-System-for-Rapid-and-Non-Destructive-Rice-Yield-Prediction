@@ -4,6 +4,12 @@ An API-driven UAV rice yield prediction backend system for real deployment. The 
 
 The repository is kept as source code only. Runtime data, uploaded images, large DJI map tiles, deployment archives, Jetson backups, and temporary analysis files are intentionally excluded from Git.
 
+## Production URL
+
+```text
+http://www.ricepheno.cn
+```
+
 ## Features
 
 - Administrator login and logout
@@ -19,21 +25,21 @@ The repository is kept as source code only. Runtime data, uploaded images, large
 
 ```text
 .
-├── index.html
-├── styles.css
-├── app.js
-├── config.js
-├── backend/
-│   ├── main.py
-│   ├── requirements.txt
-│   └── Dockerfile
-├── deploy/
-│   ├── mysql/schema.sql
-│   └── nginx/
-├── docs/
-├── docker-compose.yml
-├── .env.example
-└── README.md
+|-- index.html
+|-- styles.css
+|-- app.js
+|-- config.js
+|-- backend/
+|   |-- main.py
+|   |-- requirements.txt
+|   `-- Dockerfile
+|-- deploy/
+|   |-- mysql/schema.sql
+|   `-- nginx/
+|-- docs/
+|-- docker-compose.yml
+|-- .env.example
+`-- README.md
 ```
 
 ## Quick Start
